@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="animation_types">
+        <item>Standard</item>
+        <item>Cards</item>
+        <item>Curl</item>
+        <item>Fade</item>
+        <item>Fan</item>
+        <item>Flip</item>
+        <item>Fly</item>
+        <item>Grow</item>
+        <item>Helix</item>
+        <item>ReverseFly</item>
+        <item>SlideIn</item>
+        <item>Tilt</item>
+        <item>Twirl</item>
+        <item>Wave</item>
+        <item>Zipper</item>
+    </string-array>
+
+    <string-array name="animation_values">
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+        <item>12</item>
+        <item>9</item>
+        <item>5</item>
+        <item>6</item>
+        <item>1</item>
+        <item>8</item>
+        <item>7</item>
+        <item>14</item>
+        <item>10</item>
+        <item>13</item>
+        <item>4</item>
+        <item>11</item>
+    </string-array>
+</resources>

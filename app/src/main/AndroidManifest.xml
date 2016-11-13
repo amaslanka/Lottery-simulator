@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pl.maslanka.lottery">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="pl.maslanka.lottery.MainActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="pl.maslanka.lottery.CompComp"
+            android:label="Wybierz cel"
+            android:parentActivityName="pl.maslanka.lottery.MainActivity" />
+        <activity
+            android:name="pl.maslanka.lottery.GameResultsComp"
+            android:label="Wyniki losowania Lotto"
+            android:parentActivityName="pl.maslanka.lottery.CompComp" />
+        <activity
+            android:name="pl.maslanka.lottery.CompUser"
+            android:parentActivityName="pl.maslanka.lottery.MainActivity" />
+        <activity
+            android:name="pl.maslanka.lottery.OneShot"
+            android:label="Wyniki losowania Lotto"
+            android:parentActivityName="pl.maslanka.lottery.CompUser" />
+        <activity
+            android:name="pl.maslanka.lottery.BetAmount"
+            android:label="Podaj ilość zakładów"
+            android:parentActivityName="pl.maslanka.lottery.CompUser" />
+        <activity
+            android:name="pl.maslanka.lottery.GameResultsUserBet"
+            android:label="Wyniki losowania Lotto"
+            android:parentActivityName="pl.maslanka.lottery.BetAmount" />
+        <activity
+            android:name="pl.maslanka.lottery.CashAmount"
+            android:label="Podaj sumę pieniędzy"
+            android:parentActivityName="pl.maslanka.lottery.CompUser" />
+        <activity
+            android:name="pl.maslanka.lottery.GameResultsUserCash"
+            android:label="Wyniki losowania Lotto"
+            android:parentActivityName="pl.maslanka.lottery.CashAmount" />
+        <activity
+            android:name="pl.maslanka.lottery.UserNumbers"
+            android:label="Podaj swoje liczby"
+            android:parentActivityName="pl.maslanka.lottery.CompUser" />
+        <activity
+            android:name="pl.maslanka.lottery.GameResultsUserNumbers"
+            android:label="Wyniki losowania Lotto"
+            android:parentActivityName="pl.maslanka.lottery.UserNumbers" />
+        <activity
+            android:name="pl.maslanka.lottery.AllNumbersList"
+            android:label="Lista wszystkich losowań"
+            android:parentActivityName="pl.maslanka.lottery.MainActivity" />
+        <activity
+            android:name="pl.maslanka.lottery.ShowWallet"
+            android:label="Twój portfel"
+            android:parentActivityName="pl.maslanka.lottery.MainActivity" />
+        <activity
+            android:name="pl.maslanka.lottery.Prefs"
+            android:label="Ustawienia"
+            android:parentActivityName="pl.maslanka.lottery.MainActivity" />
+
+    </application>
+
+</manifest>

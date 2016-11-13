@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pl.maslanka.lottery.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/show_wallet"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="@string/drawn_numbers_text"
+                android:layout_width="match_parent"
+                android:id="@+id/drawn_numbers_text"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/drawn_numbers_table">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/drawn_numbers_table_row">
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:text="@string/how_many_bets_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/how_many_bets_from_amount_text"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="sans-serif" />
+
+            <TextView
+                tools:text="@string/how_many_bets_from_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:id="@+id/how_many_bets_from_amount"
+                android:textStyle="normal|bold"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:text="@string/game_result_hit_numbers_text"
+                android:layout_width="match_parent"
+                android:id="@+id/game_result_hit_numbers_text"
+                android:textAlignment="center"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/hits_table_layout">
+
+            </TableLayout>
+
+            <TextView
+                android:text="@string/cost_amount_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:id="@+id/cost_amount_text"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="sans-serif" />
+
+            <TextView
+                tools:text="@string/cost_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:id="@+id/cost_amount"
+                android:textStyle="normal|bold"
+                android:textColor="@color/colorAccent" />
+
+
+            <TextView
+                android:text="@string/prize_amount_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:id="@+id/prize_amount_text"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="sans-serif" />
+
+            <TextView
+                tools:text="@string/prize_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:id="@+id/prize_amount"
+                android:textStyle="normal|bold"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:text="@string/settlement_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:id="@+id/settlement_text1"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="sans-serif" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/prize_table_layout">
+
+            </TableLayout>
+
+            <TextView
+                android:text="@string/settlement_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/settlement_text2"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="sans-serif" />
+
+            <TextView
+                tools:text="@string/settlement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="20dp"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:id="@+id/settlement"
+                android:textStyle="normal|bold"
+                android:textColor="@color/colorAccent" />
+
+            <Button
+                android:text="@string/show_draws"
+                android:layout_marginTop="8.5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/show_draws" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:text="@string/show_wallet"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_wallet" />
+
+
+</RelativeLayout>
