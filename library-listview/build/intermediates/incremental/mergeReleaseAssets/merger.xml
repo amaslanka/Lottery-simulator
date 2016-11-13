@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\Android\AndroidStudioProjects\Lotto\library-listview\src\main\assets"/><source path="D:\Android\AndroidStudioProjects\Lotto\library-listview\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="D:\Android\AndroidStudioProjects\Lotto\library-listview\src\release\assets"/></dataSet></merger>

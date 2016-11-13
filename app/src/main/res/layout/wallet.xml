@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pl.maslanka.lottery.MainActivity">
+
+    <Button
+        android:text="@string/clear_wallet"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clear_wallet" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/clear_wallet"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+            android:text="@string/wallet_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/wallet_state_text"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:fontFamily="sans-serif" />
+
+
+            <TextView
+                tools:text="@string/wallet_state_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:id="@+id/wallet_state"
+                android:textStyle="normal|bold"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@id/wallet_state_text"/>
+
+            <TextView
+                android:text="@string/total_hits"
+                android:layout_width="match_parent"
+                android:id="@+id/total_hits_text"
+                android:textAlignment="center"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="18sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wallet_state" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/total_hits_text"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/hits_table_layout">
+
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

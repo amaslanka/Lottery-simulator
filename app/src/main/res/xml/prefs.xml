@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+
+    <PreferenceCategory
+
+        android:title="@string/performance">
+
+
+        <SwitchPreference
+            android:title="@string/user_prefs"
+            android:summary="@string/user_prefs_desc"
+            android:key="pref_user_values"
+            android:defaultValue="false"/>
+
+
+        <Preference
+            android:title="@string/max_drawing_number_for_list"
+            android:summary="@string/max_drawing_number_for_list_desc"
+            android:defaultValue="50000"
+            android:dependency="pref_user_values"
+            android:id="@+id/max_list_size_pref"
+            android:key="max_list_size" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+
+        android:title="@string/apperance">
+
+        <ListPreference
+            android:title="@string/list_animation_type"
+            android:summary="@string/list_animation_type_summary"
+            android:entries="@array/animation_types"
+            android:defaultValue="14"
+            android:entryValues="@array/animation_values"
+            android:key="animation_pref">
+
+
+        </ListPreference>
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
